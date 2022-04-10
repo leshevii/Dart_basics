@@ -17,6 +17,8 @@ class Point {
     return Point(1, 1, 1);
   }
 
+  get numStr => 'x:$x,y:$y,z:$z';
+
   ///Расстояние между точками в пространстве
   distanceTo(Point p2) =>
       sqrt(pow((p2.x - x), 2) + pow((p2.y - y), 2) + pow((p2.z - z), 2));

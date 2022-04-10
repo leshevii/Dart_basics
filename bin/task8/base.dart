@@ -31,6 +31,7 @@ class UserManager extends User {
   bool removeUser(User user) => _users.remove(user);
 
   void printAll() {
+    print(email);
     _users.forEach((element) {
       element is AdminUser
           ? print(element.getMailSystem())

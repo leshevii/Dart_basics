@@ -1,5 +1,7 @@
 import 'dart:math';
 
+///n - степень корня по умолчанию квадратиный корень извлекаем
+///iter - число итераций для точности работы алгоритма
 extension RootExtension on num {
   num getRoot({int n = 2, int iter = 10}) {
     if (n % 2 == 0 && this < 0)

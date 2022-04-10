@@ -10,7 +10,9 @@ class ConvertCalculator {
   ///Результирующий набор чисил
   final List<int> _numbers = [];
 
-  ConvertCalculator(this._source);
+  ConvertCalculator(this._source) {
+    toBinary();
+  }
 
   ///Метод конвертирует из десятичного->в двоичное представление
   void toBinary() {
@@ -18,7 +20,7 @@ class ConvertCalculator {
   }
 
   ///Выводим 2 представление
-  String printBinary() => _numbers.reversed.join();
+  String getBinary() => _numbers.reversed.join();
 
   ///Из 10->2 представление
   int toDecimal() {
